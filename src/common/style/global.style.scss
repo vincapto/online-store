@@ -1,0 +1,109 @@
+:root {
+  --main-light: #f1f3f4;
+  --main-purple: #cd84ea;
+  --main-violet: #692783;
+  --main-blue: #33ccff;
+  --main-button: #a370b7;
+  --main-button-text: #2d2d2e;
+  --main-blue-light: #cecece;
+  --main-pink: #ff99cc;
+  --main-pink-light: #ead8e1;
+  --main-grey: #eeafce;
+  --sub-grey: #d9d9d9;
+}
+
+body {
+  background: rgb(255, 184, 243) url(https://raw.githubusercontent.com/codeSTACKr/glassmorphism-credit-card/3b0562ab457f2ca260d49ac5ff271dc4fc33870b/img/bg.svg) center/cover;
+  font-family: Verdana,
+    sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto
+}
+
+.block {
+  border: 2px solid var(--main-purple);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  padding-top: 10px;
+  background: var(--main-blue-light);
+  border: 1px solid var(--main-purple);
+}
+
+.input {
+  background-color: var(--main-purple);
+}
+
+.hide {
+  display: none !important
+}
+
+h4 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.btn {
+  border: 1px solid var(--main-violet);
+  background-color: var(--main-button);
+  border-radius: 3px;
+  color: var(--main-blue);
+  cursor: pointer;
+  padding: 5px;
+  transition: all .3s ease;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: white;
+
+  &:hover {
+    color: white;
+    background: linear-gradient(to bottom left, var(--main-blue) 0%, var(--main-pink) 100%);
+    // box-shadow: 0px 2px 20px 10px var(--main-grey);
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+  }
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  background-color: var(--main-purple);
+  color: white;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='text'] {
+  color: white;
+  font-weight: 500;
+  border: 1px pink solid;
+  outline: none;
+  padding: 5px;
+}
+
+select {
+  color: white;
+}
