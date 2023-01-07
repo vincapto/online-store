@@ -1,0 +1,18 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  
+    &__control {
+      display: flex;
+      align-items: center;
+    }
+  
+    &__btn {}
+  
+    &__per-page {}
+  }
+  
+  .pagination__per-page {
+    background-color: var(--main-button);
+  }
