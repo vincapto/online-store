@@ -1,0 +1,64 @@
+
+:root {
+    --main-light: #f1f3f4;
+    --main-purple: #cd84ea;
+    --main-violet: #692783;
+    --main-blue: #33ccff;
+    --main-button: #a370b7;
+    --main-button-text: #2d2d2e;
+    --main-blue-light: #cecece;
+    --main-pink: #ff99cc;
+    --main-pink-light: #ead8e1;
+    --main-grey: #eeafce;
+    --sub-grey: #d9d9d9;
+  }.modal {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(#000000, 0.3);
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .show-modal {
+    display: flex !important;
+  }
+  
+  .buy {
+    background-color: white;
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+  
+    &__item-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .credit-card {
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 5px;
+    background: linear-gradient(135deg, var(--main-blue), var(--main-purple));
+  }
+  .buy__input {
+    transition: all 0.3s ease;
+    border: 2px solid var(--sub-grey);
+  }
+  .buy__input:focus {
+    border: 2px solid var(--main-purple) !important;
+    box-shadow: 0px 2px 20px 10px var(--main-grey);
+  }
+  .credit-card-name img {
+    width: 40px;
+  }
