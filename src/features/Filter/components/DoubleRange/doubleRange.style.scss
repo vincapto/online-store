@@ -1,0 +1,42 @@
+.range-container {
+    position: relative;
+    pointer-events: none;
+    width: 100%;
+  }
+  
+  .range__label-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .range-container .range__slider[type='range'] {
+    height: 2em;
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .range-container .range__slider:last-child {
+    background: #000;
+    margin-top: -2em;
+  }
+  
+  .settings-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .range__slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    color: #13bba4;
+    pointer-events: all;
+  }
+  
+  .range__slider::-moz-range-thumb {
+    pointer-events: all;
+  }
+  
+  .range__slider::-ms-thumb {
+    pointer-events: all;
+  }
