@@ -201,9 +201,7 @@ productElement.addEventListener('click', (e) => {
     updateCartInfo();
   }
   if (element.classList.contains('btn_buy')) {
-    console.log(catalogState.getOrderList(), orderState.orderPull());
     buyRedirect(element, orderState);
-    console.log(catalogState.getOrderList(), orderState.orderPull());
     updateCartInfo();
     (<Element>cartList).innerHTML = updateCart(catalogState.getOrderList(), orderState.orderPull());
     pushRout('/cart?modal=true');

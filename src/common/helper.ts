@@ -20,7 +20,6 @@ export function buyRedirect(btn: IBtnId, orderState: OrderState) {
     dataset: { id, price },
   } = btn;
   const isIncludes = orderState.toggleNotExist(id, price);
-  console.log('TES', isIncludes);
   isIncludes ? '' : addOrderStorage(id, 1, price);
   return orderState.changeCountNotExist(isIncludes);
 }
