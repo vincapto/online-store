@@ -30,17 +30,14 @@ export class OrderState {
     const end = perPage + start;
     const final = count >= end ? perPage : count % perPage;
     if (perPage * (current - 1) == count) {
-      console.log('equals !', current - 1, Math.floor(count / perPage) + 1);
       this.current = current - 1;
       return current > 1 ? current - 1 : 1;
     }
     if (perPage * (current - 1) + final > count) {
-      console.log('grater !', perPage * (current - 1) + final);
       const maxPage = Math.floor(count / perPage) + 1;
       this.current = final !== 0 ? maxPage : maxPage - 1;
       return final !== 0 ? maxPage : maxPage - 1;
     } else {
-      console.log('default !', current);
       return current !== 0 ? current : 1;
     }
   }
@@ -51,7 +48,6 @@ export class OrderState {
     const modal = this.modal;
 
     const current = this.calculateCurrent();
-    console.log('AAAAAAAA', current);
     return {
       count,
       current,
