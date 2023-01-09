@@ -55,6 +55,12 @@ ul {
   padding: 0;
 }
 
+.pagination__control {
+  .btn {
+    margin-top: 0;
+  }
+}
+
 .btn {
   border: 1px solid var(--main-violet);
   background-color: var(--main-button);
@@ -102,6 +108,12 @@ input[type='text'] {
   border: 1px pink solid;
   outline: none;
   padding: 5px;
+}
+
+.modal {
+  input[type='text'] {
+    color: black;
+  }
 }
 
 select {

@@ -158,7 +158,6 @@ export class CatalogState {
   }
 
   checkProp(product: IProduct, query: string) {
-    const rg = new RegExp('\\b' + query.toLowerCase() + '\\b');
     const res = Object.entries(product).some((item: productTulip) => {
       if (item[0] === 'id' || item[0] === 'thumbnail' || item[0] === 'images') return false;
       return item[1].toString().toLowerCase().includes(query.toLowerCase());

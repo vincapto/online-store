@@ -206,7 +206,7 @@ export function getCreditCardFormInput(block: Document, validationState: IValida
   const expireLabel = <HTMLInputElement>block.querySelector('.error-expire');
   const cardNameLabel = <HTMLInputElement>block.querySelector('.credit-card-name');
 
-  number.addEventListener('keyup', (e) => {
+  number.addEventListener('keyup', () => {
     number.textContent = '';
   });
   number.addEventListener('input', (e) => {
