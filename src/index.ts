@@ -107,12 +107,13 @@ updateCartInfo();
 
 logoList.forEach((a) => {
   a.addEventListener('click', () => {
+    resetAll();
     pushRout('/');
     onPopstate();
   });
 });
 
-showFilterForm.addEventListener('click', (e) => {
+showFilterForm.addEventListener('click', () => {
   filterForm.classList.toggle('filter-form--active');
   showFilterForm.textContent?.includes('Filter')
     ? (showFilterForm.textContent = 'Close')
@@ -144,7 +145,7 @@ btnReset?.addEventListener('click', () => {
 
 let timerCopy: null | NodeJS.Timeout = null;
 
-btnCopy?.addEventListener('click', (e) => {
+btnCopy?.addEventListener('click', () => {
   navigator.clipboard.writeText(window.location.href);
   btnCopy.textContent = 'Copied!';
   if (timerCopy === null) {
